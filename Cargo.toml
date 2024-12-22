@@ -20,12 +20,12 @@ itertools = "0.10.5"
 hex = "0.4.3"
 
 # halo2
-halo2_proofs = { git = "https://github.com/privacy-scaling-explorations/halo2.git", tag = "v2023_02_02" }
+halo2_proofs = "0.3.0"
 
 # Axiom's helper API with basic functions 
-halo2-base = { git = "https://github.com/axiom-crypto/halo2-lib", tag = "v0.3.0-ce" }
+halo2-base = { git = "https://github.com/axiom-crypto/halo2-lib", branch = "main" }
 # Axiom poseidon chip (adapted from Scroll)
-poseidon = { git = "https://github.com/axiom-crypto/halo2-lib", tag = "v0.3.0-ce" }
+poseidon = { git = "https://github.com/axiom-crypto/halo2-lib", branch = "main" }
 # Axiom Evm wrapper 
 # These are just for making proving executables, if you are just building a library you don't need them as dependencies in your project
 axiom-eth = { git = "https://github.com/axiom-crypto/axiom-eth.git", branch = "community-edition", default-features = false, features = ["halo2-axiom", "aggregation", "evm", "clap"] }
